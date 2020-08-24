@@ -1,2 +1,6 @@
-# grime-j.github.io
-of one noob, by one noob. And for other noobs.
+# https://grime-j.github.io
+# Currentl theme is whiteglass. (https://github.com/yous/whiteglass)
+
+Blog for & by one noob. 
+And also for other noobs.
+
