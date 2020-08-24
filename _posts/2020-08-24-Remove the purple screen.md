@@ -3,16 +3,21 @@ layout: post
 ---
 
 # Remove the Purple Screen
-# ver. Ubuntu 20.04
+  ver. Ubuntu 20.04
 
 
 우분투 20.04 로그인 시 깜빡거리는 보라색 화면을 제거해보았습니다.
+
+  주의. 저는 프로그래밍 숙련자가 아닙니다. 제 방법이 잘못되었을 가능성은 굉장히 높습니다.
+
+  따라하실 거라면 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.
+
+
 I just found the way to remove purple screen after login-in Ubuntu 20.04.
 
-주의. 저는 프로그래밍 숙련자가 아닙니다. 제 방법이 잘못되었을 가능성은 굉장히 높습니다.
-따라하실 거라면 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.
-WARNING! I'm super-duper noob, so My way may be wrong.
-Before trying this, I recommend to find another solution.
+  WARNING! I'm super-duper noob, so My way may be wrong.
+
+  Before trying this, I recommend to find another solution.
 
 # How to
 1. find your `libgnome-shell.so`
@@ -31,7 +36,9 @@ Before trying this, I recommend to find another solution.
 5. 저는 검은색(#000000)으로 변경하였습니다.
 6. 이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면 대신 검은 화면이 조금 더 길게 나오다 바로 배경화면으로 넘어가는 걸 확인하실 수 있습니다.
 
+
 ![예시](https://i.imgur.com/gZepGIu.png)
+
 
 fin. If you have any better solution, please let me know.
 (This is the limitation in my level...)
