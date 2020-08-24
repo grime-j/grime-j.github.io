@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Troubled-and-crumbled one
+title: Traveling log of troubled-and-crumbled
 author: Grime J.
 description: Of one noob, by one noob. And for other noobs.
 baseurl: "" # the subpath of your site, e.g. /blog

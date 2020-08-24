@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <generator uri="http://jekyllrb.com" version="4.1.1">Jekyll</generator>
+  
+  
+  <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" />
+  <updated>2020-08-24T10:03:04+00:00</updated>
+  <id>http://localhost:4000//</id>
+
+  
+    <title type="html">Troubled-and-crumbled one</title>
+  
+
+  
+    <subtitle>Of one noob, by one noob. And for other noobs.</subtitle>
+  
+
+  
+    <author>
+        <name>Grime J.</name>
+      
+      
+    </author>
+  
+
+  
+  
+    <entry>
+      
+      <title type="html">Test Post</title>
+      
+      
+      <link href="http://localhost:4000/2020/08/24/test-post/" rel="alternate" type="text/html" title="Test Post" />
+      
+      <published>2020-08-24T00:00:00+00:00</published>
+      <updated>2020-08-24T00:00:00+00:00</updated>
+      <id>http://localhost:4000/2020/08/24/test-post</id>
+      <content type="html" xml:base="http://localhost:4000/2020/08/24/test-post/">&lt;p&gt;테스트 파일입니다.
+test file
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;today is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD&lt;/code&gt;
+오늘은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY년 MM월 DD일&lt;/code&gt;입니다&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;오늘은&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`YY년 MM월 DD일`&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;입니다&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;plz visit &lt;a href=&quot;https://grime-j.github.io&quot;&gt;my blog&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      
+        <author>
+            <name>Grime J.</name>
+          
+          
+        </author>
+      
+
+      
+
+      
+
+      
+        <summary type="html">테스트 파일입니다. test file _posts today is YYYY-MM-DD 오늘은 YYYY년 MM월 DD일입니다 오늘은 `YY년 MM월 DD일`입니다 plz visit my blog</summary>
+      
+
+      
+      
+    </entry>
+  
+  
+</feed>
