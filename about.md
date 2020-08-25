@@ -38,7 +38,7 @@ So, This blog is not helpful for many senior programmers.
 <br/>
 I use this blog just for logging my code, and for someone just like me.
 <br/>
-If you want to contact me, Please send <a href="mailto:treepple.j@gmail.com?subject=free chocolate">e-mail</a> to me.
+If you want to contact me, Please send <a href="mailto:treepple.j@gmail.com?subject=To Grime J.">e-mail</a> to me.
 
 <br/>
 
