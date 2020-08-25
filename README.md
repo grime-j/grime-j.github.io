@@ -1,6 +1,4 @@
 # https://grime-j.github.io
 # Current theme is whiteglass. (https://github.com/yous/whiteglass)
 
-Blog of & by one noob. 
-And also for others.
-
+of one, by one, and also for others.
