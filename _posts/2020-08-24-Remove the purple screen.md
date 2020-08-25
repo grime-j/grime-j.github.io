@@ -2,7 +2,7 @@
 layout: post
 ---
 
-### **Remove the Purple Screen in login-ing situation**
+### **Remove the Purple Screen in login-ing Ubuntu 20.04**
 ##### <span style="color:purple">ENV: *Ubuntu ver. **20.04.1 LTS** & Gnome Shell ver. **3.36.4***
 ##### *Posted by **Grime J**. on **Aug. 24, 2020. (UTC+9)** / **2020-08-24***
 
@@ -15,7 +15,7 @@ layout: post
 - <span style="color:purple"> **요약**</span>: **`libgnome-shell.so`** 파일을 찾아 **`#4f194c`** 색 코드를 변경하시면 됩니다.
 
 
-**I just found the way to remove purple screen after login-ing Ubuntu.**
+**I just found the way to remove purple screen after login-ing Ubuntu 20.04.**
 - <span style="color:red">**WARNING!!**</span> I am very very newbie, so my solution may be wrong.
 - Before trying this, I recommend you to find another solution. Maybe there is some better one!
 - <span style="color:purple"> **Summary**</span>: Find the **`libgnome-shell.so`** file, and change the color code **`#4f194c`.**
