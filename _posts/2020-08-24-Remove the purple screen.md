@@ -3,7 +3,7 @@ layout: post
 ---
 
 ### **Remove the Purple Screen in login-ing situation**
-##### <span style="color:purple">*Ubuntu ver. **20.04.1 LTS**, Gnome Shell ver. **3.36.4***
+##### <span style="color:purple">ENV: *Ubuntu ver. **20.04.1 LTS** & Gnome Shell ver. **3.36.4***
 ##### *Posted by **Grime J**. on **Aug. 24, 2020. (UTC+9)** / **2020-08-24***
 
 <br/>
