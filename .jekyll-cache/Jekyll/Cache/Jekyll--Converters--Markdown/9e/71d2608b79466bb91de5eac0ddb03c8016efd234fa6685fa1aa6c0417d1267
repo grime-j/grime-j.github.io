@@ -1,105 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  
-  
-  <title>log of Troubled-and-Crumbled_One</title>
-  <meta name="description" content="Of one, by one, And for others.">
-  
-
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
-  
-  
-  <link rel="alternate" type="application/rss+xml" title="log of Troubled-and-Crumbled_One" href="http://localhost:4000/feed.xml">
-
-  
-
-  
-  <meta property="og:title" content="log of Troubled-and-Crumbled_One">
-  <meta property="og:site_name" content="log of Troubled-and-Crumbled_One">
-  <meta property="og:url" content="http://localhost:4000/">
-  <meta property="og:description" content="Of one, by one, And for others.">
-  
-  
-  <meta name="twitter:card" content="summary">
-  
-  <meta name="twitter:title" content="log of Troubled-and-Crumbled_One">
-  <meta name="twitter:description" content="Of one, by one, And for others.">
-  
-  
-
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&amp;display=swap" rel="stylesheet">
-
-  
-
-</head>
-
-
-  <body>
-
-    <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="/">log of Troubled-and-Crumbled_One</a>
-
-    <nav class="site-nav">
-      
-        
-        <a class="page-link" href="/about/">About</a>
-      
-        
-        <a class="page-link" href="/archives/">Archives</a>
-      
-        
-        <a class="page-link" href="https://github.com/grime-j">GitHub</a>
-      
-    </nav>
-
-  </div>
-
-</header>
-
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-
-  
-
-  
-
-  <ul class="post-list">
-    
-      
-      
-
-      <li>
-        <header class="post-header">
-          <h1 class="post-title">
-            
-              <a class="post-link" href="/2020/08/24/Remove-the-purple-screen/">Remove the purple screen</a>
-            
-          </h1>
-
-          <p class="post-meta">
-            Aug 24, 2020
-            
-            
-          </p>
-        </header>
-
-        <div class="post-content">
-          <h3><strong>Remove the Purple-Splash Screen without extension</strong></h3>
+I"<h3>Remove the Purple-Splash Screen without extension</h3>
 <h5><span style="color:purple"><em>Ubuntu ver. <strong>20.04.1 LTS</strong>, Gnome Shell ver. <strong>3.36.4</strong></em></span></h5>
 <h5><em>Posted by <strong>Grime J</strong>. on <strong>Aug. 24, 2020. (UTC+9)</strong> / <strong>2020-08-24</strong></em></h5>
 
@@ -109,19 +8,19 @@
 <ul>
   <li><span style="color:red"><strong>주의!!</strong></span> 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다.</li>
   <li>따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.</li>
-  <li><span style="color:purple"> <strong>요약</strong></span>: <strong><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code></strong> 파일을 찾아 <strong><code class="language-plaintext highlighter-rouge">#4f194c</code></strong> 색 코드를 변경하시면 됩니다.</li>
+  <li><span style="color:blue"> <strong>요약</strong></span>: <strong><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code></strong> 파일을 찾아 <strong><code class="language-plaintext highlighter-rouge">#4f194c</code></strong> 색 코드를 변경하시면 됩니다.</li>
 </ul>
 
 <p><strong>I just found the way to remove purple-splash screen after login-inin Ubuntu.</strong></p>
 <ul>
   <li><span style="color:red"><strong>WARNING!!</strong></span> I am very very newbie, so my solution may be wrong.</li>
   <li>Before trying this, I recommend you to find another solution. Maybe there is some better one!</li>
-  <li><span style="color:purple"> <strong>Summary</strong></span>: Find the <strong><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code></strong> file, and change the color code <strong><code class="language-plaintext highlighter-rouge">#4f194c</code>.</strong></li>
+  <li><span style="color:blue"> <strong>Summary</strong></span>: Find the <strong><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code></strong> file, and change the color code <strong><code class="language-plaintext highlighter-rouge">#4f194c</code>.</strong></li>
 </ul>
 
 <p><br /></p>
 
-<h2><strong>방법</strong></h2>
+<h2>방법</h2>
 <ol>
   <li><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code>파일을 찾습니다. 제 경우에는 <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code>에 있었습니다.</li>
   <li>만약 찾기 어려우시다면, <code class="language-plaintext highlighter-rouge">find</code>기능을 사용하여 <code class="language-plaintext highlighter-rouge">#4f194c</code> 색 코드를 갖고 있는 문서를 찾아보세요.</li>
@@ -136,7 +35,7 @@
 
 <p><br /></p>
 
-<h2><strong>Solution</strong></h2>
+<h2>Solution</h2>
 <ol>
   <li>find your <code class="language-plaintext highlighter-rouge">libgnome-shell.so</code> file. In my case, That is in <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code></li>
   <li>If you cannot find the file, you can use <code class="language-plaintext highlighter-rouge">find</code>. Find the color code <code class="language-plaintext highlighter-rouge">#4f194c</code>.</li>
@@ -155,10 +54,10 @@
 
 <p><br /></p>
 
-<h3><em>참조. 알아낸 방법 / Appendix. How I find this solution?</em></h3>
+<h3>참조. 알아낸 방법 / Appendix. How I find this solution?</h3>
 <ul>
-  <li><span style="color:green"> 다음 주 주중 안</span>에 업데이트하도록 하겠습니다.</li>
-  <li>I’ll update in <span style="color:green"> next week.</span></li>
+  <li><span style="color:red"> 다음 주 주중 안</span>에 업데이트하도록 하겠습니다.</li>
+  <li>I’ll update in <span style="color:red"> next week.</span></li>
 </ul>
 
 <p><br />
@@ -174,37 +73,4 @@
 
 <h3><em>Grime J.</em></h3>
 
-
-        </div>
-        
-      </li>
-    
-  </ul>
-
-  
-
-
-</div>
-
-      </div>
-    </main>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <p>
-      
-
-&copy; Grime J. - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="http://localhost:4000/feed.xml">RSS</a>
-
-    </p>
-
-  </div>
-
-</footer>
-
-
-  </body>
-
-</html>
+:ET
