@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>log of Troubled-and-Crumbled_One</title>
+    <title>Trampled Terra-Traveler in Trouble</title>
     <description>Of one, by one, And for others.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Aug 2020 02:21:14 +0000</pubDate>
-    <lastBuildDate>Tue, 25 Aug 2020 02:21:14 +0000</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2020 20:46:10 -0900</pubDate>
+    <lastBuildDate>Mon, 24 Aug 2020 20:46:10 -0900</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
-        <title>Remove the purple screen</title>
-        <description>&lt;h3&gt;&lt;strong&gt;Remove the Purple-Splash Screen without extension&lt;/strong&gt;&lt;/h3&gt;
-&lt;h5&gt;&lt;span style=&quot;color:purple&quot;&gt;&lt;em&gt;Ubuntu ver. &lt;strong&gt;20.04.1 LTS&lt;/strong&gt;, Gnome Shell ver. &lt;strong&gt;3.36.4&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/h5&gt;
-&lt;h5&gt;&lt;em&gt;Posted by &lt;strong&gt;Grime J&lt;/strong&gt;. on &lt;strong&gt;Aug. 24, 2020. (UTC+9)&lt;/strong&gt; / &lt;strong&gt;2020-08-24&lt;/strong&gt;&lt;/em&gt;&lt;/h5&gt;
+        <title>Remove the purple screen of ubuntu</title>
+        <description>&lt;h3&gt;&lt;strong&gt;Remove the Purple Screen in login-ing Ubuntu 20.04&lt;/strong&gt;&lt;/h3&gt;
+&lt;h5&gt;&lt;span style=&quot;color:purple&quot;&gt;ENV: &lt;em&gt;Ubuntu ver. &lt;strong&gt;20.04.1 LTS&lt;/strong&gt; &amp;amp; Gnome Shell ver. &lt;strong&gt;3.36.4&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;em&gt;Posted by &lt;strong&gt;Grime J&lt;/strong&gt;. on &lt;strong&gt;Aug. 24, 2020.&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;(20.08.24)&lt;/strong&gt;&lt;/h5&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;우분투 20.04 로그인 직후에 잠깐 나타나던 보라색 화면을 제거해보았습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;주의!!&lt;/strong&gt;&lt;/span&gt; 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다.&lt;/li&gt;
   &lt;li&gt;따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.&lt;/li&gt;
   &lt;li&gt;&lt;span style=&quot;color:purple&quot;&gt; &lt;strong&gt;요약&lt;/strong&gt;&lt;/span&gt;: &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libgnome-shell.so&lt;/code&gt;&lt;/strong&gt; 파일을 찾아 &lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#4f194c&lt;/code&gt;&lt;/strong&gt; 색 코드를 변경하시면 됩니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;I just found the way to remove purple-splash screen after login-inin Ubuntu.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I just found the way to remove purple screen after login-ing Ubuntu 20.04.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;WARNING!!&lt;/strong&gt;&lt;/span&gt; I am very very newbie, so my solution may be wrong.&lt;/li&gt;
   &lt;li&gt;Before trying this, I recommend you to find another solution. Maybe there is some better one!&lt;/li&gt;
@@ -58,7 +58,7 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;And just modify the color code in about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;39116&lt;/code&gt;th row. In my case, I set the color code &lt;strong&gt;black&lt;/strong&gt;(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#000000&lt;/code&gt;).&lt;/li&gt;
-  &lt;li&gt;And DONE!! There will be no-purple-splash-screen in your logging situation!&lt;/li&gt;
+  &lt;li&gt;And DONE!! There will be no-purple-screen in your login-ing situation!&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -67,7 +67,7 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3&gt;&lt;em&gt;참조. 알아낸 방법 / Appendix. How I find this solution?&lt;/em&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;em&gt;부록. 계기와 시행착오에 대하여 / Appendix. How can I do this?&lt;/em&gt;&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;span style=&quot;color:green&quot;&gt; 다음 주 주중 안&lt;/span&gt;에 업데이트하도록 하겠습니다.&lt;/li&gt;
   &lt;li&gt;I’ll update in &lt;span style=&quot;color:green&quot;&gt; next week.&lt;/span&gt;&lt;/li&gt;
@@ -82,14 +82,38 @@
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;fin&lt;/em&gt;&lt;/strong&gt;. If you have any better solution, please let me know. (This is the limitation in my level…)&lt;/p&gt;
 
-&lt;p&gt;Thank you for watching my blog. May the happiness with you.&lt;/p&gt;
+&lt;p&gt;Thank you for watching my post. May the happiness be with you.&lt;/p&gt;
 
 &lt;h3&gt;&lt;em&gt;Grime J.&lt;/em&gt;&lt;/h3&gt;
 
+&lt;div id=&quot;post-disqus&quot; class=&quot;container&quot;&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://grime-j.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+                            
+&lt;/div&gt;
+
 </description>
-        <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2020/08/24/Remove-the-purple-screen/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/08/24/Remove-the-purple-screen/</guid>
+        <pubDate>Mon, 24 Aug 2020 00:00:00 -0900</pubDate>
+        <link>http://localhost:4000/2020/08/24/Remove-the-purple-screen-of-Ubuntu/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/08/24/Remove-the-purple-screen-of-Ubuntu/</guid>
         
         
       </item>

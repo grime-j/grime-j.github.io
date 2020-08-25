@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: log of Troubled-and-Crumbled_One
+title: Trampled Terra-Traveler in Trouble
 author: Grime J.
 description: Of one, by one, And for others.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://grime-j.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-lang: en
-timezone: UTC
+lang: ko
+timezone: UTC+9
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -37,7 +37,10 @@ twitter_image:
 facebook_app_id:
 facebook_image:
 google_analytics:
-comments: false
+comments: true
+
+# Disqus
+discus-identifier: grime-j
 
 # Plugins
 plugins:
