@@ -10,7 +10,7 @@
   
   
   <title>Remove the purple screen of ubuntu</title>
-  <meta name="description" content="Remove the Purple Screen in login situation of Ubuntu ver. 20.04.                                                                                                                                                                                 Posted by Grime J. on Aug. 24, 2020. (20.08.24)                                                                                                                                                              ENV: Ubuntu ver. 20.04.1 LTS &amp;amp; Gnome Shell ver. 3.36.4 우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다. 주의!! 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다. 따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다. 요약: libgnome-shell.so 파일을 찾아 #4f194c 색 코드를 변경하시면 됩니다. I just found the way to remove purple screen after login-ing Ubuntu 20.04. WARNING!! I am very very newbie, so my solution may be wrong. Before trying this, I recommend you to find another solution. Maybe there is some better one! Summary: Find the libgnome-shell.so file, and change the color code #4f194c. 방법 libgnome-shell.so파일을 찾습니다. 제 경우에는 /usr/lib/gnome-shell/에 있었습니다. 만약 찾기 어려우시다면, find기능을 사용하여 #4f194c 색 코드를 갖고 있는 문서를 찾아보세요. 예시: 현재 위치를 포함하는 모든 하위 디렉토리에서 찾으려 할 경우 sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null 파일을 여신 후에 약 39116번째 줄에 있는 #4f194c 색 코드를 변경해주세요. 저는 검은색(#000000)으로 하였습니다. 이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다! Solution find your libgnome-shell.so file. In my case, That is in /usr/lib/gnome-shell/ If you cannot find the file, you can use find. Find the color code #4f194c. Eg. Find all files, including your subdirectory on your current position. sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null And just modify the color code in about 39116th row. In my case, I set the color code black(#000000). And DONE!! There will be no-purple-screen in your login-ing situation! 부록. 계기와 시행착오에 대하여 / Appendix. How can I do this? 다음 주 주중 안에 업데이트하도록 하겠습니다. I’ll update in next week. 마치며.                                                                                                                                                                                                                    혹시 더 멋지거나 깔끔한 방법을 알고 계신 분은 언제든지 알려주시면 감사하겠습니다!                                                        읽어주셔서 감사합니다. 행복한 하루 되세요. fin.                                                                                                                                                                                                                              If you have any better solution, please let me know. (This is the limitation in my level…)                          Thank you for watching my post. May the happiness be with you.                                                                                                                             Grime J. Please enable JavaScript to view the comments powered by Disqus.">
+  <meta name="description" content="Remove the Purple Screen in login situation of Ubuntu ver. 20.04. Posted by Grime J. on Aug. 24, 2020. (20.08.24) ENV: Ubuntu ver. 20.04.1 LTS &amp;amp; Gnome Shell ver. 3.36.4 우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다. 주의!! 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다. 따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다. 요약: libgnome-shell.so 파일을 찾아 #4f194c 색 코드를 변경하시면 됩니다. I just found the way to remove purple screen after login-ing Ubuntu 20.04. WARNING!! I am very very newbie, so my solution may be wrong. Before trying this, I recommend you to find another solution. Maybe there is some better one! Summary: Find the libgnome-shell.so file, and change the color code #4f194c. 방법 libgnome-shell.so파일을 찾습니다. 제 경우에는 /usr/lib/gnome-shell/에 있었습니다. 만약 찾기 어려우시다면, find기능을 사용하여 #4f194c 색 코드를 갖고 있는 문서를 찾아보세요. 예시: 현재 위치를 포함하는 모든 하위 디렉토리에서 찾으려 할 경우 sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null 파일을 여신 후에 약 39116번째 줄에 있는 #4f194c 색 코드를 변경해주세요. 저는 검은색(#000000)으로 하였습니다. 이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다! Solution find your libgnome-shell.so file. In my case, That is in /usr/lib/gnome-shell/ If you cannot find the file, you can use find. Find the color code #4f194c. Eg. Find all files, including your subdirectory on your current position. sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null And just modify the color code in about 39116th row. In my case, I set the color code black(#000000). And DONE!! There will be no-purple-screen in your login-ing situation! 부록. 계기와 시행착오에 대하여 / Appendix. How can I do this? 다음 주 주중 안에 업데이트하도록 하겠습니다. I’ll update in next week. 마치며. 혹시 더 멋지거나 깔끔한 방법을 알고 계신 분은 언제든지 알려주시면 감사하겠습니다! 읽어주셔서 감사합니다. 행복한 하루 되세요. fin. If you have any better solution, please let me know. (This is the limitation in my level…) Thank you for watching my post. May the happiness be with you. Grime J. Please enable JavaScript to view the comments powered by Disqus.">
   
 
   <link rel="stylesheet" href="/assets/main.css">
@@ -25,13 +25,13 @@
   <meta property="og:title" content="Remove the purple screen of ubuntu">
   <meta property="og:site_name" content="Trampled Terra-Traveler in Trouble">
   <meta property="og:url" content="http://localhost:4000/2020/08/24/Remove-the-purple-screen-of-Ubuntu/">
-  <meta property="og:description" content="Remove the Purple Screen in login situation of Ubuntu ver. 20.04.                                                                                                                                                                                 Posted by Grime J. on Aug. 24, 2020. (20.08.24)                                                                                                                                                              ENV: Ubuntu ver. 20.04.1 LTS &amp;amp; Gnome Shell ver. 3.36.4 우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다. 주의!! 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다. 따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다. 요약: libgnome-shell.so 파일을 찾아 #4f194c 색 코드를 변경하시면 됩니다. I just found the way to remove purple screen after login-ing Ubuntu 20.04. WARNING!! I am very very newbie, so my solution may be wrong. Before trying this, I recommend you to find another solution. Maybe there is some better one! Summary: Find the libgnome-shell.so file, and change the color code #4f194c. 방법 libgnome-shell.so파일을 찾습니다. 제 경우에는 /usr/lib/gnome-shell/에 있었습니다. 만약 찾기 어려우시다면, find기능을 사용하여 #4f194c 색 코드를 갖고 있는 문서를 찾아보세요. 예시: 현재 위치를 포함하는 모든 하위 디렉토리에서 찾으려 할 경우 sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null 파일을 여신 후에 약 39116번째 줄에 있는 #4f194c 색 코드를 변경해주세요. 저는 검은색(#000000)으로 하였습니다. 이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다! Solution find your libgnome-shell.so file. In my case, That is in /usr/lib/gnome-shell/ If you cannot find the file, you can use find. Find the color code #4f194c. Eg. Find all files, including your subdirectory on your current position. sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null And just modify the color code in about 39116th row. In my case, I set the color code black(#000000). And DONE!! There will be no-purple-screen in your login-ing situation! 부록. 계기와 시행착오에 대하여 / Appendix. How can I do this? 다음 주 주중 안에 업데이트하도록 하겠습니다. I’ll update in next week. 마치며.                                                                                                                                                                                                                    혹시 더 멋지거나 깔끔한 방법을 알고 계신 분은 언제든지 알려주시면 감사하겠습니다!                                                        읽어주셔서 감사합니다. 행복한 하루 되세요. fin.                                                                                                                                                                                                                              If you have any better solution, please let me know. (This is the limitation in my level…)                          Thank you for watching my post. May the happiness be with you.                                                                                                                             Grime J. Please enable JavaScript to view the comments powered by Disqus.">
+  <meta property="og:description" content="Remove the Purple Screen in login situation of Ubuntu ver. 20.04. Posted by Grime J. on Aug. 24, 2020. (20.08.24) ENV: Ubuntu ver. 20.04.1 LTS &amp;amp; Gnome Shell ver. 3.36.4 우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다. 주의!! 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다. 따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다. 요약: libgnome-shell.so 파일을 찾아 #4f194c 색 코드를 변경하시면 됩니다. I just found the way to remove purple screen after login-ing Ubuntu 20.04. WARNING!! I am very very newbie, so my solution may be wrong. Before trying this, I recommend you to find another solution. Maybe there is some better one! Summary: Find the libgnome-shell.so file, and change the color code #4f194c. 방법 libgnome-shell.so파일을 찾습니다. 제 경우에는 /usr/lib/gnome-shell/에 있었습니다. 만약 찾기 어려우시다면, find기능을 사용하여 #4f194c 색 코드를 갖고 있는 문서를 찾아보세요. 예시: 현재 위치를 포함하는 모든 하위 디렉토리에서 찾으려 할 경우 sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null 파일을 여신 후에 약 39116번째 줄에 있는 #4f194c 색 코드를 변경해주세요. 저는 검은색(#000000)으로 하였습니다. 이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다! Solution find your libgnome-shell.so file. In my case, That is in /usr/lib/gnome-shell/ If you cannot find the file, you can use find. Find the color code #4f194c. Eg. Find all files, including your subdirectory on your current position. sudo find . -type f -print 2&amp;gt; /dev/null | xargs grep -r --color=auto -n &quot;#4f194c&quot; 2&amp;gt;/dev/null And just modify the color code in about 39116th row. In my case, I set the color code black(#000000). And DONE!! There will be no-purple-screen in your login-ing situation! 부록. 계기와 시행착오에 대하여 / Appendix. How can I do this? 다음 주 주중 안에 업데이트하도록 하겠습니다. I’ll update in next week. 마치며. 혹시 더 멋지거나 깔끔한 방법을 알고 계신 분은 언제든지 알려주시면 감사하겠습니다! 읽어주셔서 감사합니다. 행복한 하루 되세요. fin. If you have any better solution, please let me know. (This is the limitation in my level…) Thank you for watching my post. May the happiness be with you. Grime J. Please enable JavaScript to view the comments powered by Disqus.">
   
   
   <meta name="twitter:card" content="summary">
   
   <meta name="twitter:title" content="Remove the purple screen of ubuntu">
-  <meta name="twitter:description" content="Remove the Purple Screen in login situation of Ubuntu ver. 20.04.                                                                                                                                    ...">
+  <meta name="twitter:description" content="Remove the Purple Screen in login situation of Ubuntu ver. 20.04. Posted by Grime J. on Aug. 24, 2020. (20.08.24) ENV: Ubuntu ver. 20.04.1 LTS &amp;amp; Gnome Shell ver. 3.36.4 우분투 20.04 로그인 직후 바탕화...">
   
   
 
@@ -82,17 +82,15 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p><br />
-<br /></p>
-<h2><strong>Remove <span style="color:purple">the Purple Screen</span> in login situation of Ubuntu <em>ver</em>. <em>20.04</em>.</strong></h2>
-<h5>                                                                                                                                                                                <em>Posted by <strong>Grime J</strong>. on <strong>Aug. 24, 2020.</strong></em> <strong>(20.08.24)</strong></h5>
-<h5>                                                                                                                                                             <span style="color:purple">ENV: <em>Ubuntu ver. <strong>20.04.1 LTS</strong> &amp; Gnome Shell ver. <strong>3.36.4</strong></em></span></h5>
+    <p><br /></p>
 
+<h2><strong>Remove <span style="color:purple">the Purple Screen</span> in login situation of Ubuntu <em>ver</em>. <em>20.04</em>.</strong></h2>
+<h5><em>Posted by <strong>Grime J</strong>. on <strong>Aug. 24, 2020.</strong></em> <strong>(20.08.24)</strong></h5>
+<h5><span style="color:purple">ENV: <em>Ubuntu ver. <strong>20.04.1 LTS</strong> &amp; Gnome Shell ver. <strong>3.36.4</strong></em></span></h5>
 <p><br />
 <br />
-<br /></p>
-
-<p><strong>우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다.</strong></p>
+<br />
+<strong>우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다.</strong></p>
 <ul>
   <li><span style="color:red"><strong>주의!!</strong></span> 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다.</li>
   <li>따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.</li>
@@ -121,8 +119,6 @@
   <li>이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다!</li>
 </ol>
 
-<p><br /></p>
-
 <h2><strong>Solution</strong></h2>
 <ol>
   <li>find your <code class="language-plaintext highlighter-rouge">libgnome-shell.so</code> file. In my case, That is in <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code></li>
@@ -148,24 +144,24 @@
   <li>I’ll update in <span style="color:green"> next week.</span></li>
 </ul>
 
-<p><br />
-<br /></p>
+<p><br /></p>
 
-<p><strong><em>마치며</em></strong>. 
-                                                                                                                                                                                                                  
+<p><strong><em>마치며</em></strong>.
+<br />
 혹시 더 멋지거나 깔끔한 방법을 알고 계신 분은 언제든지 알려주시면 감사하겠습니다!
-                                                      
+<br />
 읽어주셔서 감사합니다. 행복한 하루 되세요.</p>
 
 <p><strong><em>fin</em></strong>. 
-                                                                                                                                                                                                                            
-If you have any better solution, please let me know. (This is the limitation in my level…)
-                        
-Thank you for watching my post. May the happiness be with you.
 <br />
+If you have any better solution, please let me know. (<del>This is the limitation in my level…</del>)
 <br />
-<br /></p>
-<h3>                                                                                                                            <em>Grime J.</em></h3>
+Thank you for watching my post. May the happiness be with you.</p>
+
+<p><br /></p>
+
+<h3><em>Grime J.</em></h3>
+
 <p><br /></p>
 
 <div id="post-disqus" class="container">

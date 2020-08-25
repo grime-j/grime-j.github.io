@@ -1,106 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  
-  
-  <title>Trampled Terra-Traveler in Trouble</title>
-  <meta name="description" content="Of one, by one, And for others.">
-  
-
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
-  
-  
-  <link rel="alternate" type="application/rss+xml" title="Trampled Terra-Traveler in Trouble" href="http://localhost:4000/feed.xml">
-
-  
-
-  
-  <meta property="og:title" content="Trampled Terra-Traveler in Trouble">
-  <meta property="og:site_name" content="Trampled Terra-Traveler in Trouble">
-  <meta property="og:url" content="http://localhost:4000/">
-  <meta property="og:description" content="Of one, by one, And for others.">
-  
-  
-  <meta name="twitter:card" content="summary">
-  
-  <meta name="twitter:title" content="Trampled Terra-Traveler in Trouble">
-  <meta name="twitter:description" content="Of one, by one, And for others.">
-  
-  
-
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&amp;display=swap" rel="stylesheet">
-
-  
-
-</head>
-
-
-  <body>
-
-    <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="/">Trampled Terra-Traveler in Trouble</a>
-
-    <nav class="site-nav">
-      
-        
-        <a class="page-link" href="/about/">About</a>
-      
-        
-        <a class="page-link" href="/archives/">Archives</a>
-      
-        
-        <a class="page-link" href="https://github.com/grime-j">GitHub</a>
-      
-    </nav>
-
-  </div>
-
-</header>
-
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-
-  
-
-  
-
-  <ul class="post-list">
-    
-      
-      
-
-      <li>
-        <header class="post-header">
-          <h1 class="post-title">
-            
-              <a class="post-link" href="/2020/08/24/Remove-the-purple-screen-of-Ubuntu/">Remove the purple screen of ubuntu</a>
-            
-          </h1>
-
-          <p class="post-meta">
-            Aug 24, 2020
-            
-            
-          </p>
-        </header>
-
-        <div class="post-content">
-          <p><br /></p>
-
+I"X<p><br />
+<br /></p>
 <h2><strong>Remove <span style="color:purple">the Purple Screen</span> in login situation of Ubuntu <em>ver</em>. <em>20.04</em>.</strong></h2>
 <h5><em>Posted by <strong>Grime J</strong>. on <strong>Aug. 24, 2020.</strong></em> <strong>(20.08.24)</strong></h5>
 <h5><span style="color:purple">ENV: <em>Ubuntu ver. <strong>20.04.1 LTS</strong> &amp; Gnome Shell ver. <strong>3.36.4</strong></em></span></h5>
@@ -136,6 +35,8 @@
   <li>이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다!</li>
 </ol>
 
+<p><br /></p>
+
 <h2><strong>Solution</strong></h2>
 <ol>
   <li>find your <code class="language-plaintext highlighter-rouge">libgnome-shell.so</code> file. In my case, That is in <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code></li>
@@ -161,7 +62,8 @@
   <li>I’ll update in <span style="color:green"> next week.</span></li>
 </ul>
 
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p><strong><em>마치며</em></strong>.
 <br />
@@ -169,16 +71,14 @@
 <br />
 읽어주셔서 감사합니다. 행복한 하루 되세요.</p>
 
-<p><strong><em>fin</em></strong>. 
+<p><strong><em>fin</em></strong>.</p>
+
+<p>If you have any better solution, please let me know. (This is the limitation in my level…)
+Thank you for watching my post. May the happiness be with you.
 <br />
-If you have any better solution, please let me know. (<del>This is the limitation in my level…</del>)
 <br />
-Thank you for watching my post. May the happiness be with you.</p>
-
-<p><br /></p>
-
-<h3><em>Grime J.</em></h3>
-
+<br /></p>
+<h3>                                                                                                                            <em>Grime J.</em></h3>
 <p><br /></p>
 
 <div id="post-disqus" class="container">
@@ -205,37 +105,4 @@ s.setAttribute('data-timestamp', +new Date());
                             
 </div>
 
-
-        </div>
-        
-      </li>
-    
-  </ul>
-
-  
-
-
-</div>
-
-      </div>
-    </main>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <p>
-      
-
-&copy; Grime J. - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="http://localhost:4000/feed.xml">RSS</a>
-
-    </p>
-
-  </div>
-
-</footer>
-
-
-  </body>
-
-</html>
+:ET

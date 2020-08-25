@@ -5,23 +5,21 @@
     <description>Of one, by one, And for others.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Aug 2020 21:46:23 -0900</pubDate>
-    <lastBuildDate>Mon, 24 Aug 2020 21:46:23 -0900</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2020 22:08:30 -0900</pubDate>
+    <lastBuildDate>Mon, 24 Aug 2020 22:08:30 -0900</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
         <title>Remove the purple screen of ubuntu</title>
-        <description>&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;Remove &lt;span style=&quot;color:purple&quot;&gt;the Purple Screen&lt;/span&gt; in login situation of Ubuntu &lt;em&gt;ver&lt;/em&gt;. &lt;em&gt;20.04&lt;/em&gt;.&lt;/strong&gt;&lt;/h2&gt;
-&lt;h5&gt;                                                                                                                                                                                &lt;em&gt;Posted by &lt;strong&gt;Grime J&lt;/strong&gt;. on &lt;strong&gt;Aug. 24, 2020.&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;(20.08.24)&lt;/strong&gt;&lt;/h5&gt;
-&lt;h5&gt;                                                                                                                                                             &lt;span style=&quot;color:purple&quot;&gt;ENV: &lt;em&gt;Ubuntu ver. &lt;strong&gt;20.04.1 LTS&lt;/strong&gt; &amp;amp; Gnome Shell ver. &lt;strong&gt;3.36.4&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/h5&gt;
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h2&gt;&lt;strong&gt;Remove &lt;span style=&quot;color:purple&quot;&gt;the Purple Screen&lt;/span&gt; in login situation of Ubuntu &lt;em&gt;ver&lt;/em&gt;. &lt;em&gt;20.04&lt;/em&gt;.&lt;/strong&gt;&lt;/h2&gt;
+&lt;h5&gt;&lt;em&gt;Posted by &lt;strong&gt;Grime J&lt;/strong&gt;. on &lt;strong&gt;Aug. 24, 2020.&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;(20.08.24)&lt;/strong&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;span style=&quot;color:purple&quot;&gt;ENV: &lt;em&gt;Ubuntu ver. &lt;strong&gt;20.04.1 LTS&lt;/strong&gt; &amp;amp; Gnome Shell ver. &lt;strong&gt;3.36.4&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/h5&gt;
 &lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;strong&gt;우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;주의!!&lt;/strong&gt;&lt;/span&gt; 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다.&lt;/li&gt;
   &lt;li&gt;따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.&lt;/li&gt;
@@ -50,8 +48,6 @@
   &lt;li&gt;이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다!&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h2&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;find your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libgnome-shell.so&lt;/code&gt; file. In my case, That is in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/lib/gnome-shell/&lt;/code&gt;&lt;/li&gt;
@@ -77,24 +73,24 @@
   &lt;li&gt;I’ll update in &lt;span style=&quot;color:green&quot;&gt; next week.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;마치며&lt;/em&gt;&lt;/strong&gt;. 
-                                                                                                                                                                                                                  
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;마치며&lt;/em&gt;&lt;/strong&gt;.
+&lt;br /&gt;
 혹시 더 멋지거나 깔끔한 방법을 알고 계신 분은 언제든지 알려주시면 감사하겠습니다!
-                                                      
+&lt;br /&gt;
 읽어주셔서 감사합니다. 행복한 하루 되세요.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;fin&lt;/em&gt;&lt;/strong&gt;. 
-                                                                                                                                                                                                                            
-If you have any better solution, please let me know. (This is the limitation in my level…)
-                        
-Thank you for watching my post. May the happiness be with you.
 &lt;br /&gt;
+If you have any better solution, please let me know. (&lt;del&gt;This is the limitation in my level…&lt;/del&gt;)
 &lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;h3&gt;                                                                                                                            &lt;em&gt;Grime J.&lt;/em&gt;&lt;/h3&gt;
+Thank you for watching my post. May the happiness be with you.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3&gt;&lt;em&gt;Grime J.&lt;/em&gt;&lt;/h3&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div id=&quot;post-disqus&quot; class=&quot;container&quot;&gt;
