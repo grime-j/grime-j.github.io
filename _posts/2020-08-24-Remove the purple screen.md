@@ -2,7 +2,7 @@
 layout: post
 ---
 
-### **Remove the Purple-Splash Screen without extension**
+### **Remove the Purple Screen in login-ing situation**
 ##### <span style="color:purple">*Ubuntu ver. **20.04.1 LTS**, Gnome Shell ver. **3.36.4***
 ##### *Posted by **Grime J**. on **Aug. 24, 2020. (UTC+9)** / **2020-08-24***
 
@@ -15,7 +15,7 @@ layout: post
 - <span style="color:purple"> **요약**</span>: **`libgnome-shell.so`** 파일을 찾아 **`#4f194c`** 색 코드를 변경하시면 됩니다.
 
 
-**I just found the way to remove purple-splash screen after login-inin Ubuntu.**
+**I just found the way to remove purple screen after login-ing Ubuntu.**
 - <span style="color:red">**WARNING!!**</span> I am very very newbie, so my solution may be wrong.
 - Before trying this, I recommend you to find another solution. Maybe there is some better one!
 - <span style="color:purple"> **Summary**</span>: Find the **`libgnome-shell.so`** file, and change the color code **`#4f194c`.**
@@ -38,7 +38,7 @@ layout: post
 3. Eg. Find all files, including your subdirectory on your current position.
 - `sudo find . -type f -print 2> /dev/null | xargs grep -r --color=auto -n "#4f194c" 2>/dev/null`
 4. And just modify the color code in about `39116`th row. In my case, I set the color code **black**(`#000000`).
-5. And DONE!! There will be no-purple-splash-screen in your logging situation!
+5. And DONE!! There will be no-purple-screen in your login-ing situation!
 
 <br/>
 
