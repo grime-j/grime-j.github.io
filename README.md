@@ -1,6 +1,6 @@
 # 그리미ɡrɪmɪ, 그리메ɡrɪmé, 혹은 그라임ɡraɪm
-# [31세 백수(진)](https://grime-j.github.io]
-# [log of Troubled-and-Crumbled_One](https://grime-j.github.io]
+# [31세 백수(진)](https://grime-j.github.io)
+# [log of Troubled-and-Crumbled_One](https://grime-j.github.io)
 
 # 현재 테마는 [whiteglass](https://github.com/yous/whiteglass)입니다.
 # Current theme is [whiteglass](https://github.com/yous/whiteglass).
