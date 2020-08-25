@@ -1,0 +1,48 @@
+I"�<h3><span style="color:red"> Remove the Purple-Splash Screen without extension</span></h3>
+<h5><span style="color:purple">Ubuntu ver. 20.04.1 LTS // Gnome Shell ver. 3.36.4 // Date. 2020/08/24 (or 08/24/2020)</span></h5>
+
+<p><strong>우분투 20.04 로그인 직후에 잠깐 나타나던 보라색 화면을 제거해보았습니다.</strong></p>
+<ul>
+  <li>주의!! 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다.</li>
+  <li>따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.</li>
+  <li><span style="color:red"> 요약</span>: <code class="language-plaintext highlighter-rouge">libgnome-shell.so</code> 파일을 찾아 <code class="language-plaintext highlighter-rouge">#4f194c</code> 색 코드를 <code class="language-plaintext highlighter-rouge">#000000</code>으로 변경하시면 됩니다.</li>
+</ul>
+
+<h4>* I just found the way to remove purple-splash screen after login-inin Ubuntu.</h4>
+<h5>- WARNING!! I am very very newbie, so my solution may be wrong.</h5>
+<h5>- Before trying this, I recommend you to find another solution. Maybe there is some better one!</h5>
+<h5>- Summary: Find the <code class="language-plaintext highlighter-rouge">libgnome-shell.so</code> file, and change the color code from <code class="language-plaintext highlighter-rouge">#4f194c</code> to <code class="language-plaintext highlighter-rouge">#000000</code>.</h5>
+
+<p><span style="color:red">붉은 색</span></p>
+
+<h1>방법</h1>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code>파일을 찾습니다. 제 경우에는 <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code>에 있었습니다.</li>
+  <li>만약 찾기 어려우시다면, <code class="language-plaintext highlighter-rouge">find</code>기능을 사용하여 <code class="language-plaintext highlighter-rouge">#4f194c</code> 색 코드를 갖고 있는 문서를 찾아보세요.</li>
+  <li>코드 예시: <code class="language-plaintext highlighter-rouge">sudo find /usr/ -type f -print 2&gt; /dev/null | xargs grep -i "#4f194c" 2&gt;/dev/null</code></li>
+  <li>파일을 여신 후에 약 <code class="language-plaintext highlighter-rouge">39116</code>번째 줄에 있는 <code class="language-plaintext highlighter-rouge">#4f194c</code> 색 코드를 변경해주세요. 저는 검은색(<code class="language-plaintext highlighter-rouge">#000000</code>)으로 하였습니다.</li>
+  <li>이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다!</li>
+</ol>
+
+<h1>How to</h1>
+<ol>
+  <li>find your <code class="language-plaintext highlighter-rouge">libgnome-shell.so</code> file. In my case, That is in <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code></li>
+  <li>If you cannot find the file, you can use <code class="language-plaintext highlighter-rouge">find</code>. Find the color code <code class="language-plaintext highlighter-rouge">#4f194c</code>.</li>
+  <li>Eg. <code class="language-plaintext highlighter-rouge">sudo find /usr/ -type f -print 2&gt; /dev/null | xargs grep -i "#4f194c" 2&gt;/dev/null</code></li>
+  <li>And just modify the color code in about <code class="language-plaintext highlighter-rouge">39116</code>th row. In my case, I set the color code <code class="language-plaintext highlighter-rouge">#000000</code>(black).</li>
+  <li>And DONE!! There will be no-purple-screen in your loging situation!</li>
+</ol>
+
+<p><img src="https://i.imgur.com/gZepGIu.png" alt="예시" /></p>
+
+<p>추신. 혹시 더 좋은 방법을 알고 계시는 고수분이 계신다면 언제든지 알려주신다면 감사하겠습니다.</p>
+
+<p>fin. If you have any better solution, please let me know. (This is the limitation in my level…)</p>
+
+<p>읽어주셔서 감사합니다. 행복한 하루 되세요.</p>
+
+<p>Thank you for watching my blog. May the happiness with you.</p>
+
+<p>Grime J.</p>
+
+:ET

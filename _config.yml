@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Traveling log of troubled-and-crumbled
+title: log of Troubled-and-Crumbled_One
 author: Grime J.
-description: Of one noob, by one noob. And for other noobs.
+description: Of one, by one, And for others.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://grime-j.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
