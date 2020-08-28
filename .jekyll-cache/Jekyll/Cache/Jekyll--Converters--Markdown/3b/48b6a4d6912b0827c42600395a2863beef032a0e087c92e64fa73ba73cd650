@@ -1,0 +1,112 @@
+I"=<p><br /></p>
+
+<div style="text-align: center">
+   <div style="font-size: 50px"><b>Remove <span style="color:purple">the Purple Screen</span></b></div>
+   <div style="font-size: 30px"> in login situation of Ubuntu <i>ver. 20.04</i> </div>
+</div>
+<div style="text-align: right"><i>Posted by <b>Grime J.</b></i> on <i><b>Aug. 24, 2020</b></i></div>
+<div style="text-align: right"><span style="color:purple">Env: Ubuntu <i>ver. <b>20.04.1</b></i> LTS &amp; Gnome shell <i>ver. <b>3.36.4</b></i></span></div>
+<p><br />
+<br />
+<br />
+<b>우분투 20.04 로그인 직후 바탕화면이 나오기 전에 잠깐 나오는 보라색 화면을 제거해보았습니다.</b></p>
+<ul>
+  <li><span style="color:red"><b>주의!!</b></span> 저는 프로그래밍 초보입니다. 이 방법으로 문제가 생길 가능성은 많습니다.</li>
+  <li>따라하시기 전에 한번 더 심사숙고 하시고 문제가 없는지 검색해보셔야만 합니다.</li>
+  <li><span style="color:purple"> <b>요약</b></span>: <b><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code></b> 파일을 찾아  <b>&lt;div style="color:#4f194c"&gt;#4f194c&lt;/div&gt; </b> 색 코드를 변경하시면 됩니다.</li>
+</ul>
+
+<p><b>I just found the way to remove purple screen after login-ing Ubuntu 20.04.</b></p>
+<ul>
+  <li><span style="color:red"><b>WARNING!!</b></span> I am very very newbie, so my solution may be wrong.</li>
+  <li>Before trying this, I recommend you to find another solution. Maybe there is some better one!</li>
+  <li><span style="color:purple"> <b>Summary</b></span>: Find the <b><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code></b> file, and change the color code &lt;div style="color:#4f194c"&gt;<b><code class="language-plaintext highlighter-rouge">#4f194c</code></b>&lt;/div&gt;</li>
+</ul>
+
+<p><br /></p>
+
+<div style="color:#4f194c"><b> 4f194c </b></div>
+
+<h2><b>방법</b></h2>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">libgnome-shell.so</code>파일을 찾습니다. 제 경우에는 <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code>에 있었습니다.</li>
+  <li>만약 찾기 어려우시다면, <code class="language-plaintext highlighter-rouge">find</code>기능을 사용하여 <code class="language-plaintext highlighter-rouge">#4f194c</code> 색 코드를 갖고 있는 문서를 찾아보세요.</li>
+  <li>예시: 현재 위치를 포함하는 모든 하위 디렉토리에서 찾으려 할 경우
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">sudo find . -type f -print 2&gt; /dev/null | xargs grep -r --color=auto -n "#4f194c" 2&gt;/dev/null</code></li>
+    </ul>
+  </li>
+  <li>파일을 여신 후에 약 <code class="language-plaintext highlighter-rouge">39116</code>번째 줄에 있는 <code class="language-plaintext highlighter-rouge">#4f194c</code> 색 코드를 변경해주세요. 저는 <b>검은색</b>(<code class="language-plaintext highlighter-rouge">#000000</code>)으로 하였습니다.</li>
+  <li>이후 재부팅을 하시면 로그인 직후에 잠깐 나타나던 보라색 화면이 나오지 않는 걸 확인하실 수 있습니다!</li>
+</ol>
+
+<h2><b>Solution</b></h2>
+<ol>
+  <li>find your <code class="language-plaintext highlighter-rouge">libgnome-shell.so</code> file. In my case, That is in <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-shell/</code></li>
+  <li>If you cannot find the file, you can use <code class="language-plaintext highlighter-rouge">find</code>. Find the color code <code class="language-plaintext highlighter-rouge">#4f194c</code>.</li>
+  <li>Eg. Find all files, including your subdirectory on your current position.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">sudo find . -type f -print 2&gt; /dev/null | xargs grep -r --color=auto -n "#4f194c" 2&gt;/dev/null</code></li>
+    </ul>
+  </li>
+  <li>And just modify the color code in about <code class="language-plaintext highlighter-rouge">39116</code>th row. In my case, I set the color code <b>black</b>(<code class="language-plaintext highlighter-rouge">#000000</code>).</li>
+  <li>And DONE!! There will be no-purple-screen in your login-ing situation!</li>
+</ol>
+
+<p><br /></p>
+
+<p><img src="https://i.imgur.com/gZepGIu.png" alt="예시" /></p>
+
+<p><br /></p>
+
+<h3><i><span style="color:green"><b>부록</b></span>. 계기와 시행착오에 대하여 / <span style="color:green"><b>Appendix</b></span>. How can I do this?</i></h3>
+<ul>
+  <li><span style="color:green"> 다음 주 주중 안</span>에 업데이트하도록 하겠습니다.</li>
+  <li>I’ll update in <span style="color:green"> next week.</span></li>
+</ul>
+
+<p><br /></p>
+
+<p><b><i>마치며</i></b>.
+<br />
+혹시 더 멋지거나 깔끔한 방법을 알고 계신 분은 언제든지 알려주시면 감사하겠습니다!
+<br />
+읽어주셔서 감사합니다. 행복한 하루 되세요.</p>
+
+<p><b><i>fin</i></b>. 
+<br />
+If you have any better solution, please let me know. (<del>This is the limitation in my level…</del>)
+<br />
+Thank you for watching my post. May the happiness be with you.</p>
+
+<p><br /></p>
+
+<h3><i>Grime J.</i></h3>
+
+<p><br /></p>
+
+<div id="post-disqus" class="container">
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://grime-j.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+</div>
+
+:ET
