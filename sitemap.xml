@@ -5,6 +5,12 @@ layout: null
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://grime-j.github.io/</loc>
+    <loc>https://grime-j.github.io/about/</loc>
+    <loc>https://grime-j.github.io/archieves/</loc>
+    <loc>https://github.com/grime-j</loc>
+  </url>
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
